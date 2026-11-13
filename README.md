@@ -10,7 +10,6 @@ TF-IDF document vectors and PCA on the BBC News Archive. The notebook and report
 
 - [Notebook](Project3_Word_Embeddings.ipynb)
 - [Project 3: Word Embeddings](<Project 3 - Word Embeddings.docx>)
-- [Requirement checklist](REVIEW.md)
 
 ## Run the notebook
 
@@ -26,12 +25,8 @@ The input data is included in `data/`. Source code is in `src/word_embeddings/`.
 The notebook writes the measured means, covariances, component coefficients, and
 reconstruction comparisons to `results/output_analysis.json`.
 
-## Checks and report export
+## Checks
 
 ```bash
 python -m pytest
-pip install -e ".[report]"
-python scripts/export_report.py
 ```
-
-The export script creates `Project 3 - Word Embeddings.docx` and `REPORT.pdf` from `REPORT.md`.
