@@ -68,7 +68,7 @@ def pdf_inline(children):
     return "".join(parts)
 
 
-def export_report(docx_name: str = "REPORT.docx"):
+def export_report(docx_name: str = "Project 3 - Word Embeddings.docx"):
     font_dir = Path(get_data_path()) / "fonts" / "ttf"
     for name, filename in [
         ("Body", "DejaVuSans.ttf"), ("BodyBold", "DejaVuSans-Bold.ttf"),
@@ -230,6 +230,6 @@ def export_report(docx_name: str = "REPORT.docx"):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--docx-name", default="REPORT.docx",
+    parser.add_argument("--docx-name", default="Project 3 - Word Embeddings.docx",
                         help="Word output filename; use a new name if the existing file is open")
     export_report(parser.parse_args().docx_name)

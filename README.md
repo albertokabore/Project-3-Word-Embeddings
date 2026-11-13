@@ -9,7 +9,7 @@ TF-IDF document vectors and PCA on the BBC News Archive. The notebook and report
 ## Submission files
 
 - [Notebook](Project3_Word_Embeddings.ipynb)
-- [Report — Word](REPORT_REVISED.docx)
+- [Project 3: Word Embeddings](<Project 3 - Word Embeddings.docx>)
 - [Requirement checklist](REVIEW.md)
 
 ## Run the notebook
@@ -31,7 +31,7 @@ reconstruction comparisons to `results/output_analysis.json`.
 ```bash
 python -m pytest
 pip install -e ".[report]"
-python scripts/export_report.py --docx-name REPORT_REVISED.docx
+python scripts/export_report.py
 ```
 
-The export script creates `REPORT_REVISED.docx` and `REPORT.pdf` from `REPORT.md`.
+The export script creates `Project 3 - Word Embeddings.docx` and `REPORT.pdf` from `REPORT.md`.
