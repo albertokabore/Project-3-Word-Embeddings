@@ -9,9 +9,7 @@ TF-IDF document vectors and PCA on the BBC News Archive. The notebook and report
 ## Submission files
 
 - [Notebook](Project3_Word_Embeddings.ipynb)
-- [Report — PDF](REPORT.pdf)
 - [Report — Word](REPORT_REVISED.docx)
-- [Report — Markdown](REPORT.md)
 - [Requirement checklist](REVIEW.md)
 
 ## Run the notebook
