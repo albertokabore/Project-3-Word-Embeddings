@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Microsoft Office temporary owner files
+~$*
+
+# Older local Word editing copy; the submission uses REPORT_REVISED.docx
+/REPORT.docx

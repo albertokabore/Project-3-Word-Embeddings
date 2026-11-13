@@ -1,0 +1,56 @@
+{
+  "rows_in": 2225,
+  "missing_values": {
+    "category": 0,
+    "filename": 0,
+    "title": 0,
+    "content": 0
+  },
+  "unknown_categories": [],
+  "whitespace_normalised": 2225,
+  "replacement_chars_repaired": 1,
+  "replacement_chars_remaining": 0,
+  "exact_duplicates_removed": 136,
+  "near_duplicates_removed": 23,
+  "near_duplicate_titles": [
+    "'No re-draft' for EU patent law",
+    "Apple laptop is 'greatest gadget'",
+    "Asia shares defy post-quake gloom",
+    "Brown names 16 March for Budget",
+    "DVD copy protection strengthened",
+    "Day-Lewis set for Berlin honour",
+    "Disney backs Sony DVD technology",
+    "Fuming Robinson blasts officials",
+    "Games win for Blu-ray DVD format",
+    "Harinordoquy suffers France axe",
+    "Housewives lift Channel 4 ratings",
+    "Intel unveils laser breakthrough",
+    "Lifestyle 'governs mobile choice'",
+    "Looks and music to drive mobiles",
+    "Mobile games come of age",
+    "Mobile multimedia slow to catch on",
+    "Mobile networks seek turbo boost",
+    "New York rockers top talent poll",
+    "Peer-to-peer nets 'here to stay'",
+    "Russian film wins BBC world prize",
+    "Sony PSP tipped as a 'must-have'",
+    "Sun offers processing by the hour",
+    "Tories unveil quango blitz plans"
+  ],
+  "too_short_removed": 0,
+  "rows_out": 2066,
+  "category_counts_before": {
+    "sport": 511,
+    "business": 510,
+    "politics": 417,
+    "tech": 401,
+    "entertainment": 386
+  },
+  "category_counts_after": {
+    "business": 499,
+    "sport": 490,
+    "politics": 392,
+    "entertainment": 362,
+    "tech": 323
+  }
+}

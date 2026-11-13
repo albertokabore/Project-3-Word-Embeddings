@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+# Preserve generated documents, figures, and dataset bytes.
+*.pdf binary
+*.docx binary
+*.png binary
+data/*.csv binary

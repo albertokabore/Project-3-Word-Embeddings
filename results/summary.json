@@ -1,0 +1,274 @@
+{
+  "dataset": {
+    "source": "https://www.kaggle.com/datasets/hgultekin/bbcnewsarchive",
+    "n_documents_raw": 2225,
+    "n_documents": 2066,
+    "category_counts": {
+      "business": 499,
+      "sport": 490,
+      "politics": 392,
+      "entertainment": 362,
+      "tech": 323
+    },
+    "median_words_per_article": 323
+  },
+  "tfidf": {
+    "n_terms": 1000,
+    "min_df": 2,
+    "matrix_shape": [
+      2066,
+      1000
+    ],
+    "sparsity": 0.9328
+  },
+  "pca": {
+    "n_components_kept": 2,
+    "total_variance": 0.942844,
+    "top10_eigenvalues": [
+      0.02209,
+      0.01754,
+      0.016323,
+      0.013055,
+      0.009655,
+      0.008573,
+      0.008384,
+      0.00791,
+      0.007508,
+      0.006855
+    ],
+    "explained_variance_ratio_kept": [
+      0.023429,
+      0.018603
+    ],
+    "cumulative_variance_kept": 0.042032,
+    "components_for_50pct": 132,
+    "components_for_80pct": 386,
+    "components_for_90pct": 553,
+    "reconstruction_mse": 0.0009027770578478856,
+    "highest_mean_terms": [
+      "said",
+      "mr",
+      "year",
+      "new",
+      "people",
+      "film",
+      "world",
+      "time",
+      "government",
+      "game"
+    ]
+  },
+  "heldout_topic_accuracy_by_dimension": {
+    "k=2": 0.7705,
+    "k=5": 0.9251,
+    "k=10": 0.9493,
+    "k=50": 0.9614,
+    "k=124 (50% of variance)": 0.9589,
+    "full (1000 terms)": 0.9686
+  },
+  "evaluation_protocol": {
+    "split": "stratified 80/20 split of cleaned document text",
+    "random_state": 42,
+    "n_train": 1652,
+    "n_test": 414,
+    "tfidf_fit_on": "training documents only (vocabulary and IDF)",
+    "pca_fit_on": "training TF-IDF only (mean, covariance and eigenvectors)",
+    "n_training_terms": 1000,
+    "majority_class": "business",
+    "majority_baseline_accuracy": 0.24154589371980675,
+    "components_for_50pct_training_variance": 124,
+    "training_variance_retained_by_dimension": {
+      "k=2": 0.04214960387969208,
+      "k=5": 0.08344370539148666,
+      "k=10": 0.12670059522590266,
+      "k=50": 0.3135376851729326,
+      "k=124 (50% of variance)": 0.5003334618388423
+    },
+    "classifier": "LogisticRegression(C=1.0, solver='lbfgs', max_iter=2000)",
+    "limitations": "One split; no hyperparameter tuning or uncertainty estimate. Near-duplicate filtering only compares identical headlines."
+  },
+  "environment": {
+    "python": "3.11.0",
+    "numpy": "2.3.4",
+    "scikit_learn": "1.7.2"
+  },
+  "validation": {
+    "max_abs_cov_diff_vs_numpy": 4.336808689942018e-19,
+    "max_abs_eigenvalue_diff_vs_sklearn": 1.3877787807814457e-17,
+    "min_abs_cosine_vs_sklearn_components": 1.0
+  },
+  "top_terms": {
+    "PC1": {
+      "positive": [
+        [
+          "mr",
+          0.357
+        ],
+        [
+          "labour",
+          0.2408
+        ],
+        [
+          "election",
+          0.1939
+        ],
+        [
+          "blair",
+          0.1937
+        ],
+        [
+          "government",
+          0.1557
+        ],
+        [
+          "party",
+          0.1506
+        ],
+        [
+          "brown",
+          0.1448
+        ],
+        [
+          "said",
+          0.1213
+        ],
+        [
+          "minister",
+          0.1147
+        ],
+        [
+          "tax",
+          0.1107
+        ]
+      ],
+      "negative": [
+        [
+          "game",
+          -0.1559
+        ],
+        [
+          "film",
+          -0.1422
+        ],
+        [
+          "best",
+          -0.1253
+        ],
+        [
+          "england",
+          -0.1173
+        ],
+        [
+          "win",
+          -0.1029
+        ],
+        [
+          "play",
+          -0.0938
+        ],
+        [
+          "cup",
+          -0.0938
+        ],
+        [
+          "match",
+          -0.0892
+        ],
+        [
+          "players",
+          -0.0862
+        ],
+        [
+          "won",
+          -0.0854
+        ]
+      ]
+    },
+    "PC2": {
+      "positive": [
+        [
+          "labour",
+          0.2024
+        ],
+        [
+          "blair",
+          0.1693
+        ],
+        [
+          "mr",
+          0.1672
+        ],
+        [
+          "election",
+          0.1578
+        ],
+        [
+          "england",
+          0.1538
+        ],
+        [
+          "game",
+          0.1372
+        ],
+        [
+          "party",
+          0.1271
+        ],
+        [
+          "brown",
+          0.1247
+        ],
+        [
+          "win",
+          0.1119
+        ],
+        [
+          "wales",
+          0.1076
+        ]
+      ],
+      "negative": [
+        [
+          "sales",
+          -0.1418
+        ],
+        [
+          "film",
+          -0.1245
+        ],
+        [
+          "market",
+          -0.1239
+        ],
+        [
+          "growth",
+          -0.1145
+        ],
+        [
+          "company",
+          -0.1136
+        ],
+        [
+          "firm",
+          -0.1042
+        ],
+        [
+          "2004",
+          -0.0987
+        ],
+        [
+          "shares",
+          -0.0926
+        ],
+        [
+          "bank",
+          -0.0866
+        ],
+        [
+          "oil",
+          -0.0864
+        ]
+      ]
+    }
+  }
+}
